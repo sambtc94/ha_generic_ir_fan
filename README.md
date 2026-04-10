@@ -4,9 +4,11 @@ Control any IR fan with any Home Assistant-compatible remote (Broadlink, Tuya, e
 
 ## Features
 
-- Adds a `fan` entity to Home Assistant for your IR remote fan.
+- Adds a `fan` entity and its own **device** in Home Assistant.
 - Compatible with any Home Assistant `remote` integration.
-- Learn and use IR commands for `off`, `speed_1`-`speed_3`, oscillate, and optional preset modes.
+- Lets you select the IR remote from a **dropdown** during setup.
+- Configure the **number of fan speeds** during startup setup.
+- Learn and use IR commands for `off`, `speed_1` through your configured max speed, oscillate, and optional preset modes.
 - Supports fans that **do not** have a dedicated `on` command by turning on with a default speed instead.
 - UI setup (config flow).
 - Entity services for learning and clearing IR codes.

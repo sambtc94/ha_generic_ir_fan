@@ -4,15 +4,19 @@
     "step": {
       "user": {
         "title": "Configure Generic IR Fan",
-        "description": "Select the remote entity, choose how the fan turns on, and optionally add preset modes.",
+        "description": "Select the remote from the dropdown, choose how many speeds the fan has, and optionally add preset modes.",
         "data": {
           "remote_entity": "IR remote entity",
           "name": "Fan name",
           "has_on_command": "Fan has a dedicated on command",
-          "default_speed": "Default speed to use when turning on",
+          "speed_count": "Number of speeds",
+          "default_speed": "Default startup speed",
           "preset_modes": "Preset modes (comma-separated, optional)"
         }
       }
+    },
+    "error": {
+      "invalid_default_speed": "Default startup speed cannot be higher than the number of speeds."
     }
   }
 }
