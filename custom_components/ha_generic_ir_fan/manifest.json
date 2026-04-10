@@ -1,7 +1,7 @@
 {
   "domain": "ha_generic_ir_fan",
   "name": "Generic IR Fan",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "config_flow": true,
   "documentation": "https://github.com/sambtc94/ha_generic_ir_fan",
   "requirements": [],

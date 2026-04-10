@@ -13,6 +13,15 @@ Control any IR fan with any Home Assistant-compatible remote (Broadlink, Tuya, e
 
 ## Installation
 
+### HACS
+
+1. In HACS, add `https://github.com/sambtc94/ha_generic_ir_fan` as a **custom repository** of type **Integration**.
+2. Install the latest version from HACS.
+3. Restart Home Assistant.
+4. Add the integration via **Settings > Devices & Services > Add Integration > Generic IR Fan**.
+
+### Manual
+
 1. Copy this folder to `/custom_components/ha_generic_ir_fan/` in your Home Assistant config.
 2. Restart Home Assistant.
 3. Add the integration via **Settings > Devices & Services > Add Integration > Generic IR Fan**.
