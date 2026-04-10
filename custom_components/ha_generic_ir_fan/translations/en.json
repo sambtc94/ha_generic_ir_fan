@@ -3,19 +3,23 @@
     "step": {
       "user": {
         "title": "Configure Generic IR Fan",
-        "description": "Select the remote from the dropdown, choose how many speeds the fan has, and optionally add preset modes.",
+        "description": "Select the remote from the dropdown, choose the speed behavior, and optionally link a power monitor for state detection.",
         "data": {
           "remote_entity": "IR remote entity",
           "name": "Fan name",
           "has_on_command": "Fan has a dedicated on command",
           "speed_count": "Number of speeds",
           "default_speed": "Default startup speed",
-          "preset_modes": "Preset modes (comma-separated, optional)"
+          "preset_modes": "Preset modes (comma-separated, optional)",
+          "power_sensor": "Power sensor (optional)",
+          "power_on_threshold": "On threshold in watts",
+          "speed_power_values": "Per-speed watt values (comma-separated, optional)"
         }
       }
     },
     "error": {
-      "invalid_default_speed": "Default startup speed cannot be higher than the number of speeds."
+      "invalid_default_speed": "Default startup speed cannot be higher than the number of speeds.",
+      "invalid_speed_power_values": "Enter one power value for each configured speed, separated by commas."
     }
   }
 }
