@@ -1,0 +1,31 @@
+learn_command:
+  name: Learn IR command
+  description: Put the remote into learn mode and assign the learned IR command to a fan action such as `off`, `speed_1`, `oscillate`, or `mode_sleep`.
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          domain: fan
+          integration: ha_generic_ir_fan
+    action:
+      required: true
+      example: mode_natural
+      selector:
+        text:
+
+clear_learned:
+  name: Clear Learned Command
+  description: Remove a learned IR command for a fan action.
+  fields:
+    entity_id:
+      required: true
+      selector:
+        entity:
+          domain: fan
+          integration: ha_generic_ir_fan
+    action:
+      required: true
+      example: speed_2
+      selector:
+        text:

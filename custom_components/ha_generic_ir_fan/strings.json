@@ -1,0 +1,18 @@
+{
+  "title": "Generic IR Fan",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Generic IR Fan",
+        "description": "Select the remote entity, choose how the fan turns on, and optionally add preset modes.",
+        "data": {
+          "remote_entity": "IR remote entity",
+          "name": "Fan name",
+          "has_on_command": "Fan has a dedicated on command",
+          "default_speed": "Default speed to use when turning on",
+          "preset_modes": "Preset modes (comma-separated, optional)"
+        }
+      }
+    }
+  }
+}
